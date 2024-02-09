@@ -19,7 +19,9 @@ let playerChoiceIds = [
 ];
 //Let the DOM Load
 document.addEventListener("DOMContentLoaded", function () {});
+
 //get players choice from DOM (main loop)
+
 function handleButtonClick() {
   document.getElementById('play').addEventListener("click", function () {
     console.log("Start button clicked")
