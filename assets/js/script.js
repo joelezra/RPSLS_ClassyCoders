@@ -21,6 +21,10 @@ let playerChoiceIds = [
 document.addEventListener("DOMContentLoaded", function () {});
 //get players choice from DOM (main loop)
 function handleButtonClick() {
+  document.getElementById('play').addEventListener("click", function () {
+    console.log("Start button clicked")});
+    document.getElementById('reset').addEventListener("click", function () {
+      console.log("Reset button clicked")});
   playerChoiceIds.forEach(function (playerChoice) {
   playerChoiceId = document.getElementById(playerChoice);
     if (playerChoiceId) {
@@ -53,12 +57,12 @@ if (playerTurn === computerTurn) {
     (playerTurn === 'scissors' && (computerTurn === 'paper' || computerTurn === 'lizard')) ||
     (playerTurn === 'lizard' && (computerTurn === 'spock' || computerTurn === 'paper')) ||
     (playerTurn === 'spock' && (computerTurn === 'scissors' || computerTurn === 'rock'))) {
-    messagePlayer.innerText = `${playerTurn} beats ${computerTurn}`;
+    messagePlayer.innerText = `You Win, ${playerTurn} beats ${computerTurn}`;
     result ="win"
   } else if (playerTurn == false || computerTurn == false) {
     messagePlayer.innerText = "Make your Choice below"
   } else {
-    messagePlayer.innerText = `${computerTurn} beats ${playerTurn}`;
+    messagePlayer.innerText = `You Lose, ${computerTurn} beats ${playerTurn}`;
     result = "loss"
   }
   
