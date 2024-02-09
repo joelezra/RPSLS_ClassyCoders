@@ -17,6 +17,12 @@
 
 ## Issues and solutions
 
+# Known Bugs (At time of writing)
+- Score increments oddly 
+
 ## Contacts
 
 ## Acknowledgements
+
+- Throttling Technique - https://codedamn.com/news/javascript/throttling-in-javascript
+- Chat-GPT, Google, Stack overflow for research and error correction
